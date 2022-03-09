@@ -21,4 +21,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install --silent
-          ng deploy --no-silent --base-href=/${GITHUB_REPOSITORY#*/}/
+          npx ng deploy --no-silent --base-href=/${GITHUB_REPOSITORY#*/}/
